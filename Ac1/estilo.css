@@ -1,0 +1,91 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #eee;
+}
+
+/* Cabeçalho e Rodapé */
+header, footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos das Seções */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+/* Estilos para o Texto */
+h1, h3, h4 {
+    font-family: 'Comfortaa', cursive;
+    margin: 0 0 10px;
+    color: turquoise;
+}
+
+/* Estilos para o Texto */
+h2 {
+    font-family: 'Comfortaa', cursive;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+
+/* Imagem de Perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil .imagem img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.perfil .texto {
+    max-width: 70%;
+}
+
+/* Estilos de Atividades */
+.atividades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.atividade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.atividade.invertida {
+    flex-direction: row-reverse;
+}
+
+.atividade .imagem img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+/* Estilos de Links */
+a {
+    color: #88c0d0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
