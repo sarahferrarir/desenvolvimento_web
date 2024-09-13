@@ -14,6 +14,13 @@ header {
   margin-bottom: 20px;
 }
 
+h2 {
+  font-family: 'Comfortaa', cursive;
+  color: turquoise;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 h1 {
   font-family: 'Comfortaa', cursive;
   color: #FFFFFF;
@@ -25,12 +32,13 @@ form {
   background-color: #444;
   padding: 20px;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: auto;
+
   margin: 0 auto;
 }
 
 fieldset {
-  border: 1px solid #666;
+  border: 1px solid turquoise;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
@@ -39,18 +47,19 @@ fieldset {
 legend {
   font-family: 'Comfortaa', cursive;
   padding: 0 10px;
+  color: turquoise;
 }
 
 label, input, textarea, select {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
   font-size: 14px;
 }
 
 input[type="text"], input[type="email"], textarea, select {
-  width: 100%;
+  width: 95%;
   padding: 8px;
-  margin-top: 5px;
+  margin-top: 6px;
   background-color: #555;
   color: #fff;
   border: 1px solid #666;
