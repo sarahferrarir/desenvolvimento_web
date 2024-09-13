@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback para a página de perfil de Sarah Ferrari</title>
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Importa as fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Título principal -->
+    <header>
+        <h1>Feedback para a página de perfil de Sarah Ferrari</h1>
+    </header>
+
+    <!-- Formulário de Feedback -->
+    <section>
+        <form>
+            <!-- Seção de Dados Pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="how-found">Como você encontrou meu perfil?</label>
+                <select id="how-found" name="how-found">
+                    <option value="google">Google</option>
+                    <option value="faculdade">Faculdade</option>
+                    <option value="social-media">Mídia Social</option>
+                    <option value="friend">Amigo</option>
+                    <option value="other">Outro</option>
+                </select>
+            </fieldset>
+
+            <!-- Seção de Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="comments">Comentários ou Feedback:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <p>Você gostou do meu perfil?</p>
+                <label><input type="radio" name="liked" value="sim"> Sim</label>
+                <label><input type="radio" name="liked" value="nao"> Não</label>
+                <label><input type="radio" name="liked" value="talvez"> Talvez</label>
+
+                <p>O que você gostou no perfil?</p>
+                <label><input type="checkbox" name="liked-feature" value="design"> Design</label>
+                <label><input type="checkbox" name="liked-feature" value="conteudo"> Conteúdo</label>
+                <label><input type="checkbox" name="liked-feature" value="facilidade-uso"> Facilidade de uso</label>
+                <label><input type="checkbox" name="liked-feature" value="outros"> Outros</label>
+            </fieldset>
+
+            <!-- Botões de Submissão -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Redefinir</button>
+        </form>
+    </section>
+
+    <!-- Multimídia -->
+    <section>
+        <h2>Cena favorita de Vingadores: Guerra Infinita</h2>
+        <!-- Vídeo incorporado do YouTube -->
+        <iframe width="560" height="315" src="https://youtu.be/uy0gloHWyyo?si=jy6XrwycnA6fpGil" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        <h2>Música Favorito</h2>
+        <!-- Áudio incorporado do SoundCloud -->
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://soundcloud.com/xiive/reflections-the-neighbourhood?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></iframe>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Obrigada por seu feedback! Agradeço por compartilhar seus pensamentos e ajudar a melhorar meu site.</p>
+    </footer>
+</body>
+</html>
