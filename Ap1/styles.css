@@ -1,0 +1,93 @@
+/* General styles for the body and headers */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style for the background image */
+.bgimg {
+  background-image: url('/w3images/profile_girl.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+/* Grid for images */
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+/* Footer icons and hover effects */
+footer i {
+  font-size: 24px;
+  margin-right: 20px;
+}
+footer i:hover {
+  opacity: 0.7;
+}
+
+/* Button styling */
+button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Sidebar and menu button */
+.w3-sidebar {
+  width: 40%;
+}
+
+.w3-sidebar a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navigation menu styles */
+.topnav {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.topnav .menu-button {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background-color: white;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+.menu-overlay a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+.menu-overlay a:hover {
+  background-color: #ddd;
+}
+
+/* Close button for navigation menu */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 36px;
+}
