@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Portfólio Fotógrafo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="img/logo.png" alt="Logo">
+      <!-- Botão hamburger para o menu no mobile -->
+      <div class="hamburger">&#9776;</div>
+
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    // Script para abrir/fechar o menu no mobile
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+<main>
+    <section class="hero-section">
+      <img src="img/perfil.JPG" alt="foto de perfil" class="hero-image">
+      <div class="hero-text">
+        <article>
+          <h2>Sobre Sarah Ferrari</h2>
+          <p>Desde pequena, Sarah sempre teve uma paixão inabalável pela fotografia. Essa paixão se transformou em um compromisso profissional em 2020, quando ela começou a capturar imagens de eventos, clínicas, fotos profissionais, esportes e competições. Sua habilidade com a câmera é evidente em cada clique, pois ela possui um olhar afiado para ângulos diferentes e criativos.</p>
+          <p>Sarah se destaca por sua capacidade de enxergar o mundo sob uma nova perspectiva, oferecendo aos seus clientes não apenas imagens, mas uma visão única e original. Seja em um evento movimentado, um ambiente clínico, uma competição esportiva ou um retrato profissional, ela sabe como capturar o momento perfeito. Seu trabalho não é apenas sobre registrar o que está na frente da câmera, mas sobre contar histórias e criar memórias visuais que perduram.</p>
+          <p>Com uma abordagem detalhista e uma sensibilidade especial para os detalhes, Sarah transforma cada sessão fotográfica em uma experiência memorável, entregando imagens que são tanto artisticamente impressionantes quanto emocionalmente ressonantes. Sua paixão pela fotografia e seu talento inato fazem dela uma escolha excepcional para qualquer necessidade fotográfica, sempre trazendo uma perspectiva inovadora e uma qualidade superior ao seu trabalho.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="left">
+      <p>Sarah Ferrari | Email: <a href="mailto:sarahferrarir@gmail.com">sarahferrarir@gmail.com</a></p>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="img/insta.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="img/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://github.com/sarahferrarir" target="_blank">
+        <img src="img/git.png" alt="GitHub">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
