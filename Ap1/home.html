@@ -9,21 +9,33 @@
 </head>
 <body>
 
-<header>
-  <nav>
-    <img src="img/logo.png" alt="Logo">
-    <div class="nav-links">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="portfolio.html">Portfólio</a>
-      <a href="contato.html">Contato</a>
-    </div>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <img src="img/logo.png" alt="Logo">
+      <!-- Botão hamburger para o menu no mobile -->
+      <div class="hamburger">&#9776;</div>
+
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    // Script para abrir/fechar o menu no mobile
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
 
 <main>
   <article>
     <h2>Sarah Ferrari - PROJETOS </h2>
+    <p>Duis mollit cillum voluptate pariatur. Do do officia culpa pariatur laboris proident dolore minim occaecat. Pariatur adipisicing nostrud laborum ad occaecat anim. Aute exercitation ex consequat esse. Fugiat laboris duis sunt anim proident.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
     <p>Duis mollit cillum voluptate pariatur. Do do officia culpa pariatur laboris proident dolore minim occaecat. Pariatur adipisicing nostrud laborum ad occaecat anim. Aute exercitation ex consequat esse. Fugiat laboris duis sunt anim proident.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
   </article>
 
@@ -50,10 +62,15 @@
     <p>Sarah Ferrari | Email: <a href="mailto:sarahferrarir@gmail.com">sarahferrarir@gmail.com</a></p>
   </div>
   <div class="social-icons">
-    <a href="https://instagram.com/seu_perfil" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="https://facebook.com/seu_perfil" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="https://github.com/seu_perfil" target="_blank"><i class="fa fa-github"></i></a>
-    <a href="https://linkedin.com/in/seu_perfil" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="img/insta.png" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/" target="_blank">
+      <img src="img/tiktok.png" alt="TikTok">
+    </a>
+    <a href="https://github.com/sarahferrarir" target="_blank">
+      <img src="img/git.png" alt="GitHub">
+    </a>
   </div>
 </footer>
 
