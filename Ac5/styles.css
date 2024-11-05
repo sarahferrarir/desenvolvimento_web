@@ -1,0 +1,99 @@
+/* Estilos principais para o layout da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos do título */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos do formulário */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+/* Estilo para cada grupo de campo */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos de campo */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo para entradas de texto, e-mail e caixa de texto */
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Permite redimensionamento vertical para a caixa de texto */
+textarea {
+    resize: vertical;
+}
+
+/* Estilos para o botão de envio */
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Botão desativado fica cinza */
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Cor mais escura quando o botão está ativo e em hover */
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red; /* Cor do texto de erro */
+    font-size: 0.875em; /* Tamanho da fonte para a mensagem de erro */
+    margin-top: 5px; /* Margem acima da mensagem de erro */
+}
+
+.invalid {
+    border-color: red; /* Bordas vermelhas para campos inválidos */
+}
+
+#spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}

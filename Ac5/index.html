@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JavaScript</title>
+    <link rel="stylesheet" href="styles.css"><!-- Link para o arquivo CSS -->
+</head>
+
+<body>
+    <!-- Título da página -->
+    <h1>Formulário de Contato</h1>
+
+    <!-- Formulário com vários campos de entrada -->
+    <form id="contactForm">
+        <!-- Campo para inserir o nome -->
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message" id="nameError"></div> <!-- Mensagem de erro -->
+        </div>
+
+        <!-- Campo para inserir o e-mail -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="emailError"></div> <!-- Mensagem de erro -->
+        </div>
+
+        <!-- Campo para inserir a mensagem -->
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="error-message" id="messageError"></div> <!-- Mensagem de erro -->
+        </div>
+
+        <!-- Campo para seleção do assunto -->
+        <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <select id="subject" name="subject" required> <!-- Opções obrigatórias de seleção -->
+                <option value="">Selecione...</option> <!-- Opção padrão sem valor -->
+                <option value="Elogio">Elogio</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Sugestão">Sugestão</option>
+            </select>
+        </div>
+
+        <!-- Campo de upload para carregar uma imagem -->
+        <div class="form-group">
+            <label for="file">Upload de Imagem:</label>
+            <input type="file" id="file" name="file" accept="image/*"> <!-- Aceita somente arquivos de imagem -->
+        </div>
+
+        <!-- Botão de envio, inicialmente desativado, será habilitado com a validação -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="spinner" style="display: none;">Carregando...</div>
+    <div id="imagePreview"></div>
+
+    <!-- Script JavaScript que irá manipular o formulário -->
+    <script src="script.js"></script>
+</body>
+
+</html>
