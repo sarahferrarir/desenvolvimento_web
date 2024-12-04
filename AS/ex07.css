@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/* Estilo da seção de filtro */
+#generation-filter {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#generation-filter label, #generation-filter select, #generation-filter button {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#pokemon-data {
+    margin-top: 20px;
+}
+
+
+#pokemon-data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-data li {
+    font-size: 18px;
+    padding: 5px;
+}
